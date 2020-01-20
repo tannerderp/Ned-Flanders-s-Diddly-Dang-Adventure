@@ -38,6 +38,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rigidBody.velocity = Vector2.up * jumpVel;
         }
+        if(IsGrounded())
+        {
+            animator.SetBool("Jumping", false);
+        }
+        else
+        {
+            animator.SetBool("Jumping", true);
+        }
 
         if (rawHorizontal != 0) //direction player is facing
         {
@@ -51,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        RaycastHit2D boxCast = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.down, 1f, layerMask);
+        RaycastHit2D boxCast = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.down, 0.2f, layerMask);
         return boxCast.collider != null;
     }
 }

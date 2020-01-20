@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  jumpVel: 17
+  jumpVel: 11
   layerMask:
     serializedVersion: 2
     m_Bits: 256
