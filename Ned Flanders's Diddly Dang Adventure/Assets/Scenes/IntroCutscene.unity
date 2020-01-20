@@ -219,6 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0
   currentTime: 0
+  approximateLoadTime: 160
 --- !u!328 &1116673648
 VideoPlayer:
   m_ObjectHideFlags: 0

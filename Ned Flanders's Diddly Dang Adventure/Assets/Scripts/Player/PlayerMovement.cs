@@ -12,12 +12,14 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rigidBody;
     BoxCollider2D boxCollider;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         var absoluteValue = Mathf.Abs(transform.localScale.x);
         var change = absoluteValue * direction;
         transform.localScale = new Vector2(change, transform.localScale.y);
+        animator.SetFloat("Speed", Mathf.Abs(horizontal * moveSpeed));
     }
 
     private bool IsGrounded()
