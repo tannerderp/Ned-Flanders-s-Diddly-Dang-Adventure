@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpVel;
     [SerializeField] LayerMask layerMask;
 
-    private float direction = 1f;
+    public float direction = 1f;
     public bool canMove = true;
 
     Rigidbody2D rigidBody;
@@ -26,13 +26,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
+        if (!canMove && rigidBody.velocity.y == 0)
         {
-            Movement();
+            rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
         }
         else
         {
-            rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
+            Movement();
         }
     }
 
