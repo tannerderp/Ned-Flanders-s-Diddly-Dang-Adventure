@@ -67,6 +67,6 @@ public class PlayerAttacks : MonoBehaviour
         GameObject b = Instantiate(Bible) as GameObject;
         b.transform.position = BibleStart.transform.position;
         b.GetComponent<Rigidbody2D>().velocity = new Vector2(bibleSpeed * movementScript.direction, 0);
-        b.GetComponent<Rigidbody2D>().AddTorque(-5f * movementScript.direction);
+        b.GetComponent<Rigidbody2D>().AddTorque(-20f * movementScript.direction);
     }
 }
