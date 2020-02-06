@@ -36,11 +36,13 @@ public class PlayerAttacks : MonoBehaviour
             animator.SetBool("Kicking", true);
             animator.SetBool("Jumping", false);
             movementScript.canMove = false;
+            this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
         }
         else
         {
             animator.SetBool("Kicking", false);
             movementScript.canMove = true;
+            this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         }
 
         if((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.G)) && throwCooldown >= 35 && kickCooldown >= 45){

@@ -22,5 +22,26 @@ public class DiddlyToucher : MonoBehaviour
     void Update()
     {
         rigidBody.velocity = new Vector2(speed * direction, rigidBody.velocity.y);
+        if (health < 1)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Bible")
+        {
+            health--;
+            collision.gameObject.GetComponent<Bible>().Die();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Kick Collider")
+        {
+            health -= 2;
+        }
     }
 }

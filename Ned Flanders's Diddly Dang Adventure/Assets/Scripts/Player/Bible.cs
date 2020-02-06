@@ -8,4 +8,9 @@ public class Bible : MonoBehaviour
     {
         Destroy(gameObject); //despawn bible when its off screen
     }
+
+    public void Die()
+    {
+        Destroy(gameObject);
+    }
 }
