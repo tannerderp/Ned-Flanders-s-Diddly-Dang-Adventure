@@ -24,7 +24,7 @@ public class DiddlyToucher : MonoBehaviour
         rigidBody.velocity = new Vector2(speed * direction, rigidBody.velocity.y);
         if (health < 1)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
 
@@ -43,5 +43,10 @@ public class DiddlyToucher : MonoBehaviour
         {
             health -= 2;
         }
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }

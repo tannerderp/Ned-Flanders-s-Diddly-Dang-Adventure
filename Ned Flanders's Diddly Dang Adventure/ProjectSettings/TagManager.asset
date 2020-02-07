@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bible
   - Kick Collider
+  - Diddly Toucher
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - 
   - 
   - Platforms
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 

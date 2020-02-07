@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float direction = 1f;
     public bool canMove = true;
+    public int health = 100;
 
     Rigidbody2D rigidBody;
     BoxCollider2D boxCollider;
@@ -69,5 +70,14 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D boxCast = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.down, 0.2f, layerMask);
         return boxCast.collider != null;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Diddly Toucher")
+        {
+            collision.gameObject.GetComponent<DiddlyToucher>().Die();
+            health -= 5;
+        }
     }
 }

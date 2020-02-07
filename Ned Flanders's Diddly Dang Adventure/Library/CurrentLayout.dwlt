@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 54
+  controlID: 99
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1388
     height: 947
-  m_MinSize: {x: 404, y: 494}
+  m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 55
+  controlID: 100
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1388
     height: 513
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 56
+  controlID: 101
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,7 +386,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 8efbffff
       m_LastClickedID: -1138
-      m_ExpandedIDs: 8efbfffff82c0000
+      m_ExpandedIDs: bcfaffffc8faffffd4fafffffcfaffff8efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -446,9 +446,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.052247, y: -1.344899, z: -367.4642}
+    m_Target: {x: 587.8141, y: 368.2001, z: -765.37604}
     speed: 2
-    m_Value: {x: 1.052247, y: -1.344899, z: -367.4642}
+    m_Value: {x: 587.8141, y: 368.2001, z: -765.37604}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -481,9 +481,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.9939785
+    m_Target: 314.3598
     speed: 2
-    m_Value: 7.9939785
+    m_Value: 314.3598
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -653,11 +653,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animations
+    - Assets/Scripts/UI
   m_ViewMode: 1
   m_StartGridSize: 75
   m_LastFolders:
-  - Assets/Animations
+  - Assets/Scripts/UI
   m_LastFoldersGridSize: 75
   m_LastProjectPath: C:\Users\tanne\Documents\Unity Repos\Ned Flanders's Diddly Dang
     Adventure\Ned Flanders's Diddly Dang Adventure
@@ -665,8 +665,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c02b0000
-    m_LastClickedID: 11200
+    m_SelectedIDs: 422b0000
+    m_LastClickedID: 11074
     m_ExpandedIDs: 0000000080290000f22a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0

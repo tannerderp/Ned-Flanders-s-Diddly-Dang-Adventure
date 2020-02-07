@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 4272615521614785588}
   - component: {fileID: 4272615521614785584}
   - component: {fileID: 4272615521614785585}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Diddly Toucher
-  m_TagString: Untagged
+  m_TagString: Diddly Toucher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
