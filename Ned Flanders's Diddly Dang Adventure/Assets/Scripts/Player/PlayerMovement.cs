@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.tag == "Diddly Toucher")
         {
             collision.gameObject.GetComponent<DiddlyToucher>().Die();
-            health -= 5;
+            health -= 10;
         }
     }
 }
